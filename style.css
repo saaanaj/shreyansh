@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+:root {
+  --bg-color: #193647; 
+  --nav-color: #133043;  /* yaha variable banaya */
+}
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar  nav{
+    display: flex;
+    justify-content: space-between; /* logo left, items right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--nav-color); /* use variable */
+    max-height: 70px;
+}
+.navicons {
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    margin-left: 40px;
+}
+.navicons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    /* background-color: #133043; */
+    object-fit: cover;
+    visibility: visible;
+}
+.navicons h2 {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.navitems ul {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    gap: 10px;
+}
+.navitems ul li {
+    padding: 10px 15px;
+    list-style: none;
+    /* margin-right: 50px; */
+}
+.navitems ul li a {
+    color: white;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+    max-height: 100%;
+    background: none;
+    color: rgb(176, 182, 184);
+    /* font-family: Figtree; */
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.5vw;
+}
+.navitems ul li:nth-child(5) a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4d4d;   /* red button */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;          /* gol corner */
+  text-decoration: none;
+  transition: 0.3s ease;       /* smooth hover effect */
+  cursor: pointer;
+}
+
+/* Hover effect */
+.navitems ul li:nth-child(5) a:hover {
+  background-color: #cc0000;   /* dark red on hover */
+  transform: scale(1.05);      /* thoda bada hover pe */
+}
+#firstpage {
+    display: flex;      
+    height: 90vh;
+    width: 100%;
+    color: #fff;
+}
+.left {
+    width: 40%;
+    background-color: var(--bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* padding: 60px; */
+     padding-left: 70px;
+    /* margin-left: 20px; */
+}
+
+.leftheader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* heading aur button ke beech gap */
+}
+
+
+.leftheader h1 {
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-wrap: nowrap;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.leftheader h5 {
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0.8;
+}
+
+.leftbutton {
+    display: flex;
+    gap: 20px; /* buttons ke beech gap */
+    margin-top: 20px;
+}
+
+/* Book Now button - bright red aur stylish */
+.leftbutton .btn:first-child {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: 0.125em;
+  --curve-size: 0.5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  cursor: pointer;
+  /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(
+    /* Top-left */ 0% var(--curve-size),
+    var(--curve-size) 0,
+    /* top-right */ 100% 0,
+    100% calc(100% - var(--curve-size)),
+    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+    /* bottom-right 2 */ 0 100%
+  );
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+
+  50% {
+    background-position: 70% 100%;
+  }
+
+  100% {
+    background-position: 31% 0%;
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+    /* Top-left */ var(--border-width)
+      calc(var(--curve-size) + var(--border-width) * 0.5),
+    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+  );
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+    /* Top-left */ calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    calc(100% - var(--border-width)) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width))
+  );
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+
+/* Learn More button - transparent with border */
+.leftbutton .btn:last-child {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.leftbutton .btn:last-child:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+/* .right {
+    width: 60%;
+    height: 100%;
+    display: flex;              
+    align-items: center;         
+    justify-content: center;     
+    background-color: lightgreen;
+}
+
+.right img {
+    margin-top: 10px;
+    width: 90%;      
+    height: 90vh;   
+    object-fit: cover;
+    object-position: center;
+} */
+
+
+.right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.right img {
+    width: auto;       /* natural width */
+    max-width: 100%;    /* max width 90% of parent */
+    height: auto;      /* maintain aspect ratio */
+    max-height: 88vh;  /* max height viewport ke 90% */
+    object-fit: contain; /* crop na ho, full image dikhe */
+    margin-right: 80px;
+}
+#secondpage {
+    width: 100%;
+    height: 100%;
+    background-color: #080312;
+}
+.secheader{
+    padding: 40px 0;
+    text-align: center;
+}
+.secheader h2 {
+    font-size: clamp(16px, 2vw, 28px);
+    font-weight: 500;
+    line-height: 1.3;
+}
+.secheader h5 {
+    font-size: clamp(12px, 1.5vw, 20px);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.testlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.firstlist {
+ background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;               
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;        /* fixed height */
+    overflow-y: auto; 
+}
+
+.firstlist img {
+    max-width: 100%;  /* container se bahar na nikle */
+    height: 27vh ;     /* aspect ratio maintain */
+    display: block;
+    margin: 0 auto 15px; /* center + neeche gap */
+    border-radius: 10px; /* optional styling */
+}
+.firstlist h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.firstlist h4 span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 8px;
+  /* margin-bottom: 5px; */
+  border-radius: 6px;
+  border: 2px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.firstlist p {
+    display: -webkit-box;
+  -webkit-line-clamp: 5;  /* 5 lines max */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  margin: 12px 0;     /* thoda gap top/bottom */
+}
+
+
+.pricereport{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.pricereport .report {
+    background-color: #2563eb; /* blue bg */
+    color: #fff;               /* white text */
+    padding: 8px 12px;        /* padding for spacing */
+    border-radius: 8px;       /* rounded corners */
+    font-size: 0.9rem;        /* thoda chhota font */
+    font-weight: 500;         /* medium weight */
+}
+.pricereport .discounted-price {
+    font-size: 1.5rem;        /* thoda bada */
+    font-weight: 600;         /* bold */
+    color: #2563eb;           /* blue color */
+}
+.pricereport .original-price {
+    font-size: 1rem;
+    color: #94a3b8;   /* muted gray */
+    text-decoration: line-through;
+}
+.pricereport .discount-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: #16a34a;   /* green */
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(22, 163, 74, 0.3);
+}
+.prcbtn {
+  display: inline-block;
+  width: 100%;                  
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;          
+  border: none;
+  border-radius: 12px;          /* thoda zyada round */
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.prcbtn:hover {
+  background: #1e40af;          
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.prcbtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+}
+
+
+
+.secondlist{
+   background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;               
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;        /* fixed height */
+    overflow-y: auto;   /* maximum height */
+}
+.secondlist img {
+    max-width: 100%;  /* container se bahar na nikle */
+    height: 27vh ;     /* aspect ratio maintain */
+    display: block;
+    margin: 0 auto 15px; /* center + neeche gap */
+    border-radius: 10px; /* optional styling */
+}
+.secondlist h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.secondlist h4 span {
+   display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 8px;
+  /* margin-bottom: 5px; */
+  border-radius: 6px;
+  border: 2px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+.secondlist p {
+   display: -webkit-box;
+  -webkit-line-clamp: 5;  /* 5 lines max */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  margin: 12px 0;      /* thoda gap top/bottom */
+}
+.secondprice{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.secondprice .scdreport {
+    background-color: #2563eb; /* blue bg */
+    color: #fff;               /* white text */
+    padding: 8px 12px;        /* padding for spacing */
+    border-radius: 8px;       /* rounded corners */
+    font-size: 0.9rem;        /* thoda chhota font */
+    font-weight: 500;         /* medium weight */
+}
+.secondprice .scddisprice {
+    font-size: 1.5rem;        /* thoda bada */
+    font-weight: 600;         /* bold */
+    color: #2563eb;           /* blue color */
+}
+.secondprice .scdorgprice {
+    font-size: 1rem;
+    color: #94a3b8;   /* muted gray */
+    text-decoration: line-through;
+}
+.secondprice .scdisprice {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: #16a34a;   /* green */
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(22, 163, 74, 0.3);
+}
+.prcbtn2 {
+  display: inline-block;
+  width: 100%;                  
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;          
+  border: none;
+  border-radius: 12px;          /* thoda zyada round */
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.prcbtn2:hover {
+  background: #1e40af;          
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.prcbtn2:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+}
+.thirdlist {
+    background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;               
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;        /* fixed height */
+    overflow-y: auto;      /* content scroll karega */
+}
+
+
+.thirdlist img {
+    max-width: 100%;  
+    height: 27vh ;     /* aspect ratio maintain */
+    display: block;
+    margin: 0 auto 15px; /* center + neeche gap */
+    border-radius: 10px; /* optional styling */
+}
+.thirdlist h4{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.thirdlist h4 span{
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 8px;
+  /* margin-bottom: 5px; */
+  border-radius: 6px;
+  border: 2px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+.thirdlist p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;  /* 5 lines max */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+
+
+.trdprice{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.trdprice .trdreport {
+    background-color: #2563eb; /* blue bg */
+    color: #fff;               /* white text */
+    padding: 8px 12px;        /* padding for spacing */
+    border-radius: 8px;       /* rounded corners */
+    font-size: 0.9rem;        /* thoda chhota font */
+    font-weight: 500;         /* medium weight */
+}
+.trdprice .trddorprice {
+    font-size: 1.5rem;        /* thoda bada */
+    font-weight: 600;         /* bold */
+    color: #2563eb;           /* blue color */
+}
+.trdprice .trdorgprice {
+    font-size: 1rem;
+    color: #94a3b8;   /* muted gray */
+    text-decoration: line-through;
+}
+.trdprice .trddisprice {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: #16a34a;   /* green */
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(22, 163, 74, 0.3);
+}
+.prcbtn3 {
+  display: inline-block;
+  width: 100%;                  
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;          
+  border: none;
+  border-radius: 12px;          /* thoda zyada round */
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.prcbtn3:hover {
+  background: #1e40af;          
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.prcbtn3:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+}
