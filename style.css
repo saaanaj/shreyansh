@@ -1222,6 +1222,7 @@ border: 2px solid rgba(0,0,0,0.35);
 .bgimgfouth img{
   height: 175vh;
   width: 100%;
+  padding: 0 20px;
 }
 .rettext1 {
   position: absolute;
@@ -1303,4 +1304,360 @@ border: 2px solid rgba(0,0,0,0.35);
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* subtle shadow */
   transition: all 0.3s ease; /* smooth hover effect */
+}
+
+#fifthpage {
+  width: 100%;
+  height: 70vh;
+  margin-top: 30px;
+}
+.fifthnav{
+  width: 100%;
+  height: 15vh;
+  padding: 5px 0;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.fifthnav h2 {
+  /* text-align: center; */
+  font-size: 2.5rem;/* fluid scaling */
+  font-weight: 500;
+  line-height: 1.3;
+  /* word-break: break-word;      */
+  text-wrap: balance;         /* balances multi-line text */
+  margin: 1em 0;            
+}
+.fifthcontent {
+  width: 100%;
+  height: 50vh;
+  /* overflow-y: auto; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 30px;
+  padding: 0 100px;
+  margin-top: 7vh;
+  /* margin-bottom: 100vh; */
+}
+.fifthcontent .fitcont1 {
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+}
+.fitcont1 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont1 h5 {
+  font-size: 1.3rem;          /* default small size */
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #7C7E85;         /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem; 
+  padding-left: 40px;    
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.fitcont1 p {
+  font-size: 1.1rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+
+
+
+
+.fifthcontent .fitcont2 {
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+}
+.fitcont2 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont2 h5 {
+  font-size: 1.3rem;         /* default small size */
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #7C7E85;         /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem; 
+  padding-left: 40px;    
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.fitcont2 p {
+  font-size: 1.1rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+.fifthcontent .fitcont3 {
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+}
+.fitcont3 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont3 h5 {
+ font-size: 1.3rem;         /* default small size */
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #7C7E85;         /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem; 
+  padding-left: 40px;    
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.fitcont3 p {
+  font-size: 1.1rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+.fifthcontent .fitcont4 {
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+}
+.fitcont4 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont4 h5 {
+  font-size: 1.3rem;         
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #7C7E85;         /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem; 
+  padding-left: 40px;    
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.fitcont4 p {
+  font-size: 1.1rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+
+#sixfooterpage {
+width: 100%;
+height: 80vh;
+color: #000;
+background-color: var(--nav-color);
+margin-top: 100px;
+}
+.sixnav{
+  width: 100%;
+  height: 20vh;
+  background-color: var(--nav-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+.sixnav h1 {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: 700;                    
+  color: #fff;                          /* readable dark color */
+  text-transform: capitalize;           /* har word ka first letter capital */
+  letter-spacing: 1px;                  /* thoda gap letters ke beech */
+  line-height: 1.2;                     /* better readability */
+
+  /* Responsive font size */
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  /* min = 1.5rem (~24px), max = 3rem (~48px), middle = 4% of viewport width */
+
+  /* Extra styling */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1); /* halka sa depth effect */
+  transition: all 0.3s ease;             /* hover ke liye smoothness */
+}
+.btnbox {
+  display: flex;
+  justify-content: center;   /* center me rakhega */
+  align-items: center;
+  /* margin-top: 40px; */
+}
+
+.service-btn {
+  display: inline-block;
+  background: #fff;
+  color: #7C7E85;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  padding: 16px 40px;
+  border: none;
+  position: relative;
+  min-width: 280px;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;        /* stripe ko andar limit karega */
+  z-index: 1;              /* text hamesha upar */
+}
+
+.service-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;                /* strip width */
+  height: 100%;
+  background: #ff4f81;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.4s ease;
+  z-index: -1;               /* background layer ban gaya */
+}
+
+/* hover effect */
+.service-btn:hover {
+  color: rgba(255,255,255,0.9); /* thoda faded white */
+}
+
+.service-btn:hover::after {
+  width: 100%;               /* full background fill */
+  border-radius: 4px;
+}
+
+.sixfotcnt {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 0 120px;
+}
+.sixfticons {
+  height: auto;
+}
+.sixfticons img {
+  /* padding-top: 20px; */
+  /* margin-top: 50px; */
+  height: 50px;
+  width: 50px;
+  margin: 0 15px; /* thoda balance margin */
+  object-fit: contain; /* image distort na ho */
+  filter: grayscale(30%) brightness(1.1); /* subtle effect */
+  transition: transform 0.3s ease, filter 0.3s ease; /* smooth hover */
+  cursor: pointer; /* clickable feel */
+}
+.sixfticons footer {
+  font-size: 0.9rem;
+  color: #fff;
+  /* margin-top: 190px; */
+  padding-top: 120px;
+}
+.sixfticons footer p {
+  font-size: 0.9rem;       /* thoda chhota text */
+  color: #aaa;             /* halka grey text */
+  margin: 0;               /* default margin remove */
+  padding: 10px 0;         /* upar-niche thoda space */
+  text-align: center;      /* center align */
+}
+.sixfticons img:hover {
+  transform: scale(1.1); /* thoda bada hoga */
+  filter: grayscale(0%) brightness(1.2); /* color wapas aayega */
+}
+.sixftlink {
+  height: auto;
+  /* text-align: right; */
+}
+.sixftlink h6 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+  text-align: right;
+}
+/* .sixftlink ul li {
+  list-style: none; 
+  margin: 8px 0;
+  gap: 100px;
+}
+
+.sixftlink ul li a {
+  font-size: 1.1rem;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  gap: 100px;
+}
+
+.sixftlink ul li a:hover {
+  color: #fff; 
+}
+.sixftlink ul li a:active {
+  color: #ff4f81;
+} */
+ .sixftlink ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sixftlink ul li {
+  list-style: none;      /* bullets hatao */
+  margin: 12px 0;        /* vertical gap between links */
+}
+
+.sixftlink ul li a {
+  font-size: 1.1rem;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sixftlink ul li a:hover {
+  color: #fff;           /* hover pe white */
+}
+
+.sixftlink ul li a:active {
+  color: #ff4f81;        /* click pe accent */
 }
