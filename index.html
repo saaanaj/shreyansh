@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
     <title>Document</title>
 </head>
 <body>
@@ -51,35 +52,36 @@
                 </div>
                 <div class="testlist">
                     <div class="firstlist">
-                     <img src="https://plus.unsplash.com/premium_photo-1661416420691-50dd2adeaa3c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt="Blood Test Icon">
-                            <h4>liver function test (LFT) <span>Test</span> </h4>
-                            <p>Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.</p>
+                     <img  id="imgchange" src="https://plus.unsplash.com/premium_photo-1661416420691-50dd2adeaa3c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blood Test Icon">
+                            <h4 id="h4textchange">liver function test (LFT) <span id="h4span">Test</span> </h4>
+                            <p id="ptextchange">Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.</p>
                         <div class="pricereport" >
                             <div class="report">
-                                <span>report same day</span>
+                                <span id="rptday">report same day</span>
                            </div>
-                            <span class="discounted-price">₹499</span>
-                            <span class="original-price">₹799</span>
-                             <span class="discount-label">38% OFF</span>
+                            <span id="dispcchange" class="discounted-price"><span>₹</span>499</span>
+                            <span id="orgprice" class="original-price"> <span>₹</span>799</span>
+                             <!-- <span id="discountlabel" class="discount-label">38 <span>% OFF</span></span> -->
+                              <span id="discountlabel" class="discount-label">38<span>% OFF</span></span>
                         </div>
                             <button  onclick="window.open('https://wa.me/918789968980?text=Hello%20I%20want%20to%20book%20a%20test','_blank')" class="prcbtn" type="button">Book Now</button>
                     </div>
                     <div class="secondlist">
-                            <img src="assets/testdoctor.webp" alt="Blood Test Icon">
-                                <h4>liver function test (LFT) <span>Test</span> </h4>
-                            <p>Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.</p>
+                            <img id="secImage" src="assets/testdoctor.webp" alt="Blood Test Icon">
+                                <h4 id="secTitle" >liver function test (LFT) <span id="secSpan" >Test</span> </h4>
+                            <p id="secDesc" >Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.</p>
                         <div class="secondprice">
                             <div class="scdreport">
-                                <span>report same day</span>
+                                <span id="secReport">report same day</span>
                            </div>
-                            <span class="scddisprice">₹499</span>
-                            <span class="scdorgprice">₹799</span>
-                             <span class="scdisprice">38% OFF</span>
+                            <span id="secDisPrice" class="scddisprice"><span>₹</span>499</span>
+                            <span id="secOrgPrice" class="scdorgprice"><span>₹</span>799</span>
+                             <span id="secDiscountLabel" class="scdisprice">38<span>% OFF</span></span>
                         </div>
                             <button  onclick="window.open('https://wa.me/918789968980?text=Hello%20I%20want%20to%20book%20a%20test','_blank')" class="prcbtn2" type="button">Book Now</button>
                     </div>
                     <div class="thirdlist">
-                         <img src="assets/testdoctor.webp" alt="Blood Test Icon">
+                         <!-- <img src="assets/testdoctor.webp" alt="Blood Test Icon">
                             <h4>liver function test (LFT) <span>Test</span> </h4>
                             <p>Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn  certified labs.</p>
                         <div class="trdprice">
@@ -89,6 +91,17 @@
                             <span class="trddorprice">₹499</span>
                             <span class="trdorgprice">₹799</span>
                              <span class="trddisprice">38% OFF</span>
+                        </div> -->
+                        <img id="thirdmage" src="assets/testdoctor.webp" alt="Blood Test Icon">
+                                <h4 id="thirdTitle" >liver function test (LFT) <span id="thirdSpan" >Test</span> </h4>
+                            <p id="thirdDesc" >Get your blood and urine tests done quickly and safely with kodwidwjbdnjwdn diwjdwdiew dwdwndwjdw dwidw ndwd wdkwndwjd fkef efkfnwkdwndwnfwnf jwfnn ejbn finw dnwd jn certified labs.</p>
+                        <div class="trdprice">
+                            <div class="trdreport">
+                                <span id="thirdReport">report same day</span>
+                           </div>
+                            <span id="thirdDisPrice" class="trddorprice"><span>₹</span>499</span>
+                            <span id="thirdOrgPrice" class="trdorgprice"><span>₹</span>799</span>
+                             <span id="thirdDiscountLabel" class="trddisprice">38<span>% OFF</span></span>
                         </div>
                             <button  onclick="window.open('https://wa.me/918789968980?text=Hello%20I%20want%20to%20book%20a%20test','_blank')" class="prcbtn3" type="button">Book Now</button>
                     </div>
@@ -230,5 +243,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="sc.js"></script>
 </body>
 </html>
