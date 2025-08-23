@@ -20,6 +20,7 @@ html , body {
     background-color: var(--bg-color);
     font-family: 'Quicksand', sans-serif;
     /* overflow: hidden; */
+/*     overflow: hidden; */
 }
 .navbar  nav{
     display: flex;
