@@ -683,6 +683,7 @@ html , body {
   width: 100%;
   background-color: var(--scdbg-color);
   color: var(--text-color);
+  margin-top: 200px;
 }
 .thirdnav{
     text-align: center;
@@ -1671,11 +1672,31 @@ margin-top: 100px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media (max-width: 600px) {
 
-    /* #main{
+     #main{
       overflow: hidden;
-    } */
+    } 
     .navbar nav {
       background-color: var(--nav-color); 
       max-height: 60px;
