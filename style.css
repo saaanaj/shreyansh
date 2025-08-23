@@ -19,6 +19,7 @@ html , body {
     width: 100%;
     background-color: var(--bg-color);
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
 }
 .navbar  nav{
     display: flex;
@@ -45,6 +46,9 @@ html , body {
 .navicons h2 {
     font-size: 1.8vw;
     font-weight: 500;
+}
+.navmenu {
+  display: none;
 }
 .navitems ul {
     display: flex;
@@ -1661,3 +1665,163 @@ margin-top: 100px;
 .sixftlink ul li a:active {
   color: #ff4f81;        /* click pe accent */
 }
+
+
+
+
+
+  @media (max-width: 600px) {
+    .navbar nav {
+      background-color: var(--nav-color); 
+      max-height: 60px;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .navicons {
+      display: flex;
+      align-items: center;
+      margin-left: -1px;
+    }
+
+    .navicons img {
+      width: 32px;
+      height: 33px;
+    }
+
+    .navicons h2 {
+      font-size: 2vw;  
+      font-weight: 900;
+    }
+
+    .navmenu {
+      display: block;
+      margin-left: 357px;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+  
+    .navitems ul {
+      display: none;             
+      position: absolute;          
+      top: -5px;                  
+      right: 20px;
+      flex-direction: column;
+    }
+
+    .navitems ul li {
+      padding: 5px 15px;
+      list-style: none;
+      text-align: center;
+      text-align: end;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navitems ul li a {
+      color: rgb(176, 182, 184);
+      text-decoration: none;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    
+   .navitems ul li:nth-child(5) a {
+      display: none;
+    }
+
+    /* Jab .active mile tab dikhana */
+    .navitems ul.active {
+      display: flex;
+    }
+
+
+
+    #firstpage {
+    /* display: block;       */
+    /* display: inline; */
+    /* display: inline-block; */
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+.left {
+    width: 100%;
+    /* background-color: var(--bg-color); */
+    /* height: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;  */
+    /* padding: 60px; */
+     padding-left: 20px;
+    /* margin-left: 20px; */
+    /* margin-top: 92px; */
+    padding-top: 70px;
+}
+
+.leftheader {
+  display: flex;        /* flexbox use karo */
+  align-items: baseline; /* text baseline align hoga */
+  gap: 10px;             /* h1 aur h5 ke beech gap */
+}
+
+.leftheader h1 {
+  font-size: 8vw;
+  font-weight: 700;
+  margin-top: 10px;
+ 
+}
+
+.leftheader h5 {
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 0.8;
+  margin: 0;  /* extra margin remove */
+  /* margin-bottom: 30px; */
+}
+
+
+
+
+.leftbutton {
+    /* display: column; */
+    /* gap: 20px;  */
+    /* padding-top: 20px; */
+    margin-top: 20px;
+    /* height: 10vh; */
+    /* width: 50%; */
+    display: flex;
+}
+
+/* .btn {
+  margin-top: 30px;
+} */
+
+.right {
+    width: 100%;
+    /* height: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: var(--bg-color); */
+}
+
+.right img {
+    /* width: auto;        */
+    max-width: 90%;    
+    height: auto;      
+    max-height: 88vh;  
+    /* object-fit: contain;  */
+    margin-right: -12px;
+    padding-bottom: 47px;
+}
+
+
+
+}
+
+
+
+  

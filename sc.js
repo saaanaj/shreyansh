@@ -154,3 +154,15 @@ async function updateFromAPI() {
 }
 
 updateFromAPI();
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".navmenu");
+  const navList = document.querySelector(".navitems ul");
+
+  menuIcon.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+});
