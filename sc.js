@@ -51,7 +51,8 @@ body {
   padding: 0;
   font-family: 'Inter', 'Poppins', sans-serif;
   background: var(--bg-primary);
-  min-height: 100vh;
+  min-height: 110vh;
+  overflow-x: hidden;
 }
 
 #loading-overlay {
