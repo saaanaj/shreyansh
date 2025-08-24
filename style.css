@@ -2367,7 +2367,7 @@ margin-top: 100px;
 
 
 
-  @media (max-width: 480px) {
+  @media (max-width: 396px) {
 
      /* #main{ */
       /* overflow: hidden; */
@@ -2397,7 +2397,7 @@ margin-top: 100px;
 
     .navmenu {
       display: block;
-      margin-left: 307px;
+      margin-left: 254px;
       font-size: 28px;
       cursor: pointer;
     }
