@@ -4127,6 +4127,105 @@ margin-top: 100px;
 
 
 
+#fourthpage {
+  display: none;
+  height: 171vh;
+  width: 100%;
+  color: var(--text-color);
+  /* margin-top: 100px; */
+}
+.bgimgfouth{
+  position: relative;
+}
+.bgimgfouth img{
+  height: 175vh;
+  width: 100%;
+  padding: 0 20px;
+}
+.rettext1 {
+  position: absolute;
+  left: 5%;    
+  top: 10%;    /* side se distance */
+  color: black;
+  max-width: 500px;
+}
+.rettext1 h1 {
+  font-size: 4rem;          /* bada size */
+  font-weight: 600;         /* thoda bold for clarity */
+  line-height: 1.2;         /* spacing improve hogi */
+  letter-spacing: -1px;     /* thoda compact aur modern look */
+  color: #fff;            
+  margin-bottom: 1rem;      /* neeche thoda gap */
+  font-family: 'Quicksand', sans-serif; /* agar aapke project me ye font ho */
+}
+
+.rettext1 h5 {
+  font-size: 1rem;          /* default small size */
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #fff;              /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem;      /* neeche space */
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.rettext1 button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 12px 24px;       /* thoda bada padding */
+  font-size: 1rem;          /* readable size */
+  font-weight: 600;         /* thoda bold */
+  color: #fff;              /* white text */
+  background-color: #FA6653; /* blue button */
+  border: none;
+  border-radius: 8px;       /* rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* subtle shadow */
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+
+.rettext2 {
+  position: absolute;
+  left: 55%;    
+  top: 58%;    /* side se distance */
+  color: black;
+  max-width: 500px;
+}
+.rettext2 h1{
+  font-size: 4rem;          /* bada size */
+  font-weight: 600;         /* thoda bold for clarity */
+  line-height: 1.2;         /* spacing improve hogi */
+  letter-spacing: -1px;     /* thoda compact aur modern look */
+  color: #2A465E;            
+  margin-bottom: 1rem;      /* neeche thoda gap */
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+
+.rettext1 h5 {
+  font-size: 1rem;          /* default small size */
+  font-weight: 400;         /* normal weight */
+  line-height: 1.5;         /* readability ke liye */
+  color: #7C7E85;         /* halka grey, readability ke liye */
+  margin-top: 0.5rem;       /* thoda gap */
+  margin-bottom: 1rem;      /* neeche space */
+  /* font-family: 'Quicksand', sans-serif;  */
+}
+.rettext2 button {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 24px;       /* thoda bada padding */
+  font-size: 1rem;          /* readable size */
+  font-weight: 600;         /* thoda bold */
+  color: #fff;              /* white text */
+  background-color: #FA6653; /* blue button */
+  border: none;
+  border-radius: 8px;       /* rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* subtle shadow */
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+
+
+
 
 
 
