@@ -2544,13 +2544,13 @@ margin-top: 100px;
   width: 100%;
   background-color: var(--scdbg-color);
   color: var(--text-color);
-  margin-top: -55px;
+  margin-top: 0px;
   position: relative;
-  margin-bottom: 76px;
+  margin-bottom: -30px;
 }
 .thirdnav{
     text-align: center;
-    padding: 20px 0;
+    padding: 1px 0;
     position: relative;
 }
 
@@ -2627,24 +2627,25 @@ margin-top: 100px;
 
 
 
-.thirdlist1 {
+/* .thirdlist1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: var(--text-color);
-    gap: 30px;
-    padding: 150px;
-}
+    /* gap: 30px; */
+
+
 .thirdlist1 {
     display: flex;
     align-items: center;
     justify-content: center;   /* center rakha hai */
-    gap: 23px;                 /* thoda aur space clean dikhega */
-    padding: 9px 114px;        
+    /* gap: 23px;                 */
+    padding: 40px 0px;        
     color: var(--text-color);
     flex-wrap: nowrap;         /* slide ke liye nowrap zaroori hai */
     overflow: hidden;          /* slide smooth ke liye */
     box-sizing: border-box;    /* better control */
+    /* margin: 0 20px;             */
 }
 
 
@@ -3017,22 +3018,23 @@ margin-top: 100px;
 
 
 .thirditem2{
-   border: 9px solid rgba(0,0,0,0.35);
-    padding: 10px;
-    border-radius: 28px;
-    /* width: 400px;                */
-    text-align: center;
-    color: var(--text-color);
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
-    max-width: 600px;       
+   border: 7px solid rgba(0, 0, 0, 0.35);
+        padding: 6px;
+        border-radius: 17px;
+        /* width: 400px; */
+        text-align: center;
+        color: var(--text-color);
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.35);
+        max-width: 600px;   
+        /* padding-left: 20px; */
 }
 .thirdimg2 img {
-  max-width: 100%;        /* container se bahar na nikle */
-  height: auto;           /* aspect ratio maintain karega */
-  display: block;
-  margin: 0 auto 15px;    /* center + neeche gap */
-  border-radius: 10px;    /* styling */
-  object-fit: cover;      /* optional: crop karega, stretch nahi */
+ max-width: 90%;
+ height: 12vh;
+display: block;
+margin: 0 auto 15px;
+border-radius: 20px;
+object-fit: cover;    /* optional: crop karega, stretch nahi */
 }
 
 
@@ -3437,9 +3439,9 @@ margin-top: 100px;
 
 
 .thirditem3{
-   border: 9px solid rgba(0,0,0,0.35);
-    padding: 10px;
-    border-radius: 28px;
+   border: 7px solid rgba(0,0,0,0.35);
+    padding: 6px;
+    border-radius: 17px;
     /* width: 400px;                */
     text-align: center;
     color: var(--text-color);
@@ -3447,11 +3449,11 @@ margin-top: 100px;
     max-width: 600px;              
 }
 .thirdimg3 img {
-  max-width: 100%;        /* container se bahar na nikle */
-  height: auto;           /* aspect ratio maintain karega */
+  max-width: 90%;        /* container se bahar na nikle */
+  height: 12vh;           /* aspect ratio maintain karega */
   display: block;
   margin: 0 auto 15px;    /* center + neeche gap */
-  border-radius: 10px;    /* styling */
+  border-radius: 20px;    /* styling */
   object-fit: cover;      /* optional: crop karega, stretch nahi */
 }
 
@@ -3466,8 +3468,8 @@ margin-top: 100px;
   contain: layout style;
   
   /* Compact Responsive Typography */
-  font-size: clamp(0.875rem, 0.8rem + 1.5vw, 1.5rem);
-  font-weight: 700;
+  font-size: clamp(0.1rem, 0.8rem + 1.5vw, 1.5rem);
+  font-weight: 500;
   font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -3703,7 +3705,7 @@ margin-top: 100px;
   color: #090909;
   padding: 0.7em 1.7em;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1px;
   border-radius: 0.5em;
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
@@ -3770,22 +3772,22 @@ margin-top: 100px;
 
 
 .thirditem4{
-   border: 9px solid rgba(0,0,0,0.35);
-    padding: 18px;
-    border-radius: 28px;
-    /* width: 400px;                */
-    text-align: center;
-    color: var(--text-color);
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
-    max-width: 600px;              
+ border: 7px solid rgba(0, 0, 0, 0.35);
+ padding: 6px;
+ border-radius: 17px;
+        /* width: 400px; */
+  text-align: center;
+ color: var(--text-color);
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.35);
+max-width: 600px;        
 }
 .thirdimg4 img {
-  max-width: 100%;        /* container se bahar na nikle */
-  height: auto;           /* aspect ratio maintain karega */
-  display: block;
-  margin: 0 auto 15px;    
-  border-radius: 10px;    /* styling */
-  object-fit: cover;      /* optional: crop karega, stretch nahi */
+  max-width: 90%;
+ height: 12vh;
+display: block;
+margin: 0 auto 15px;
+border-radius: 20px;
+object-fit: cover;     /* optional: crop karega, stretch nahi */
 }
 
 
@@ -4269,7 +4271,7 @@ margin-top: 7vh;
 /* margin-bottom: 100vh; */
 }
 .fifthcontent .fitcont1 {
-  padding: 10px 20px;
+  padding: 20px 0px;
   height: 91%;
   width: 154%;
 }
@@ -4282,6 +4284,7 @@ margin-top: 7vh;
   /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
 }
 .fitcont1 h5 {
+  text-wrap: nowrap;
   font-size: 2rem;          
   font-weight: 400;        
   line-height: 1.5;        
@@ -4307,13 +4310,13 @@ margin-top: 7vh;
 
 
 .fifthcontent .fitcont2 {
-  padding: 13px 34px;
-  height: 90%;
-  width: 160%;
+  padding: 20px 0px;
+  height: 91%;
+  width: 154%;
   margin-top: 70px;
 }
 .fitcont2 img {
-  padding: 10px 20px;
+   padding: 10px 20px;
   max-width: 100%;
   max-height: 25vh;
   height: 90%;
@@ -4322,6 +4325,7 @@ margin-top: 7vh;
   /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
 }
 .fitcont2 h5 {
+  text-wrap: nowrap;
   font-size: 2rem;          
   font-weight: 400;        
   line-height: 1.5;        
@@ -4343,21 +4347,22 @@ margin-top: 7vh;
   word-break: break-all;       /* breaks long words */
 }
 .fifthcontent .fitcont3 {
- padding: 13px 34px;
- height: 90%;
-  width: 160%;
-  margin-top: 80px;
+padding: 20px 0px;
+height: 91%;
+width: 154%;
+  margin-top: 120px;
 }
 .fitcont3 img {
   padding: 10px 20px;
   max-width: 100%;
   max-height: 25vh;
-  height: 100%;
+  height: 90%;
   margin-top: 150px;
   /* border-radius: 12px; */
   /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
 }
 .fitcont3 h5 {
+  text-wrap: nowrap;
   font-size: 2rem;          
   font-weight: 400;        
   line-height: 1.5;        
@@ -4379,21 +4384,22 @@ margin-top: 7vh;
   word-break: break-all;       /* breaks long words */
 }
 .fifthcontent .fitcont4 {
- padding: 13px 34px;
- height: 90%;
- width: 160%;
+ padding: 20px 0px;
+height: 91%;
+width: 154%;
  margin-top: 70px;
 }
 .fitcont4 img {
   padding: 10px 20px;
   max-width: 100%;
   max-height: 25vh;
-  height: 100%;
+  height: 90%;
   margin-top: 280px;
   /* border-radius: 12px; */
   /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
 }
 .fitcont4 h5 {
+  text-wrap: nowrap;
   font-size: 2rem;          
   font-weight: 400;        
   line-height: 1.5;        
