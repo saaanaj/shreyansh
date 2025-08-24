@@ -20,7 +20,8 @@ html , body {
     background-color: var(--bg-color);
     font-family: 'Quicksand', sans-serif;
     /* overflow: hidden; */
-    overflow: hidden;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 .navbar  nav{
     display: flex;
@@ -356,8 +357,8 @@ html , body {
 
 .arrow {
     position: absolute;   /* ab ye #thirdpage ke andar hi position hoga */
-    left: 0;              /* bilkul left side */
-    top: 50%;             /* vertical center */
+    left: 20px;              /* bilkul left side */
+    top: 65%;             /* vertical center */
     transform: translateY(-50%);
     display: flex;
     align-items: center;
@@ -366,7 +367,7 @@ html , body {
 
 .arrow img {
     width: 50px;
-    height: 50px;
+    height: 38px;
     animation: bounce 2s infinite;
 }
 
@@ -375,8 +376,8 @@ html , body {
 
 .arrowicon {
     position: absolute;
-    right: 0;
-    top: 50%;
+    right: 20px;
+    top: 65%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
@@ -385,7 +386,7 @@ html , body {
 
 .arrowicon img {
     width: 50px;
-    height: 50px;
+    height: 38px;
     animation: bounce 2s infinite;
 }
 
@@ -2517,6 +2518,1616 @@ margin-top: 100px;
     margin-right: -12px;
     padding-bottom: 47px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#thirdpage {
+  height: 110vh;
+  width: 100%;
+  background-color: var(--scdbg-color);
+  color: var(--text-color);
+  margin-top: 200px;
+  position: relative;
+  /* margin-bottom: 200px; */
+}
+.thirdnav{
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+
+
+
+.thirdnav h2 {
+  font-size: clamp(1rem, 1.2rem + 1vw, 2rem); /* fluid scaling */
+  font-weight: 500;
+  line-height: 1.3;
+  word-break: break-word;     /* prevents overflow */
+  text-wrap: balance;         /* balances multi-line text */
+  margin: 0.5em 0;            /* keeps spacing consistent */
+}
+.thirdnav h5 {
+  font-size: clamp(0.8rem, 0.75rem + 0.6vw, 1.2rem); /* smoother scaling */
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  word-break: break-word;   /* prevents overflow on tiny screens */
+  text-wrap: balance;       /* nicer wrapping for multi-line text */
+}
+
+
+
+.arrow {
+  display: none;
+    position: absolute;   
+    left: 20px;            
+    top: 65%;           
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow img {
+  display: none;
+    width: 50px;
+    height: 38px;
+    animation: bounce 2s infinite;
+}
+
+
+
+
+.arrowicon {
+  display: none;
+    position: absolute;
+    right: 20px;
+    top: 65%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowicon img {
+  display: none;
+    width: 50px;
+    height: 38px;
+    animation: bounce 2s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thirdlist1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--text-color);
+    gap: 30px;
+    padding: 150px;
+}
+.thirdlist1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* center rakha hai */
+    gap: 23px;                 /* thoda aur space clean dikhega */
+    padding: 100px 114px;        
+    color: var(--text-color);
+    flex-wrap: nowrap;         /* slide ke liye nowrap zaroori hai */
+    overflow: hidden;          /* slide smooth ke liye */
+    box-sizing: border-box;    /* better control */
+}
+
+
+
+
+
+.thirditem1{
+    border: 9px solid rgba(0,0,0,0.35);
+    padding: 18px;
+    border-radius: 28px;
+    /* width: 400px;                */
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;       
+}
+.thirdimg img {
+  max-width: 100%;        /* container se bahar na nikle */
+  height: auto;           /* aspect ratio maintain karega */
+  display: block;
+  margin: 0 auto 15px;    /* center + neeche gap */
+  border-radius: 10px;    /* styling */
+  object-fit: cover;      /* optional: crop karega, stretch nahi */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thirdtext1 h3 {
+  /* Isolated Positioning - Won't affect other elements */
+  position: relative;
+  isolation: isolate;
+  contain: layout style;
+  
+  /* Compact Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 1.5vw, 1.5rem);
+  font-weight: 700;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  
+  /* Compact Layout */
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: clamp(0.15em, 0.1em + 0.2vw, 0.3em);
+  width: fit-content;
+  max-width: 100%;
+  
+  /* Ultra Minimal Spacing - Maximum Height Reduction */
+  margin: 0;
+  padding: clamp(0.15rem, 0.1rem + 0.2vw, 0.3rem) clamp(0.4rem, 0.3rem + 0.4vw, 0.8rem);
+  text-align: start;
+  
+  /* Beautiful Visual Design */
+  color: #1a365d;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(247, 250, 252, 0.9) 50%,
+    rgba(237, 242, 247, 0.85) 100%);
+  
+  /* Minimal Rounded Corners */
+  border-radius: clamp(3px, 0.2rem + 0.2vw, 6px);
+  
+  /* Subtle Box Shadows */
+  box-shadow: 
+    0 clamp(1px, 0.0625rem + 0.1vw, 2px) clamp(4px, 0.25rem + 0.4vw, 8px) rgba(0, 0, 0, 0.06),
+    0 1px clamp(2px, 0.125rem + 0.2vw, 4px) rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  
+  /* Gradient Border */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform, box-shadow;
+  
+  /* Minimal Backdrop Effects */
+  backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+  -webkit-backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+}
+
+/* Decorative Gradient Border */
+.thirdtext1 h3::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%);
+  border-radius: inherit;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Shimmer Effect */
+.thirdtext1 h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%);
+  border-radius: inherit;
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover Animations */
+.thirdtext1 h3:hover {
+  transform: translateY(-0.5px) scale(1.005);
+  color: #2d3748;
+  
+  /* Minimal Enhanced Shadows on Hover */
+  box-shadow: 
+    0 clamp(2px, 0.125rem + 0.2vw, 4px) clamp(8px, 0.5rem + 0.6vw, 12px) rgba(0, 0, 0, 0.1),
+    0 1px clamp(4px, 0.25rem + 0.3vw, 6px) rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(249, 250, 251, 0.95) 50%,
+    rgba(243, 244, 246, 0.9) 100%);
+}
+
+.thirdtext1 h3:hover::before {
+  opacity: 0.8;
+}
+
+.thirdtext1 h3:hover::after {
+  left: 100%;
+}
+
+/* Active State */
+.thirdtext1 h3:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Beautiful H3 Span Styling */
+.thirdtext1 h3 span {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.75rem, 0.7rem + 1.2vw, 1.4rem);
+  font-weight: 500;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  
+  /* Beautiful Color with Gradient Text */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  /* Compact Layout */
+  display: inline-block;
+  position: relative;
+  text-wrap: balance;
+  word-break: normal;
+  
+  /* Minimal Spacing */
+  margin: 0;
+  padding: 0;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Elegant Underline Effect */
+.thirdtext1 h3 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 1px;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Span Hover Effects */
+.thirdtext1 h3:hover span {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thirdtext1 h3:hover span::after {
+  transform: scaleX(1);
+  opacity: 0.8;
+}
+
+/* Beautiful Paragraph Styling */
+.thirdtext1 p {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 0.8vw, 1.2rem);
+  font-weight: 400;
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: clamp(1.4, 1.3 + 0.2vw, 1.6);
+  letter-spacing: 0.005em;
+  
+  /* Beautiful Color */
+  color: #4a5568;
+  
+  /* Elegant Layout */
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
+  /* Compact Spacing */
+  margin: clamp(0.5rem, 0.4rem + 0.3vw, 0.8rem) 0 0 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+  /* Subtle Visual Enhancement */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  
+  /* Smooth Transitions */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Paragraph Hover Effect */
+.thirdtext1:hover p {
+  color: #2d3748;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thirdtext1 button {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin-top: 20px;
+}
+
+.thirdtext1 button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.thirdtext1 button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext1 button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext1 button:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.thirdtext1 button:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+
+
+
+.thirditem2{
+   border: 9px solid rgba(0,0,0,0.35);
+    padding: 18px;
+    border-radius: 28px;
+    /* width: 400px;                */
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;       
+}
+.thirdimg2 img {
+  max-width: 100%;        /* container se bahar na nikle */
+  height: auto;           /* aspect ratio maintain karega */
+  display: block;
+  margin: 0 auto 15px;    /* center + neeche gap */
+  border-radius: 10px;    /* styling */
+  object-fit: cover;      /* optional: crop karega, stretch nahi */
+}
+
+
+.thirdtext2 h3 {
+  /* Isolated Positioning - Won't affect other elements */
+  position: relative;
+  isolation: isolate;
+  contain: layout style;
+  
+  /* Compact Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 1.5vw, 1.5rem);
+  font-weight: 700;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  
+  /* Compact Layout */
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: clamp(0.15em, 0.1em + 0.2vw, 0.3em);
+  width: fit-content;
+  max-width: 100%;
+  
+  /* Ultra Minimal Spacing - Maximum Height Reduction */
+  margin: 0;
+  padding: clamp(0.15rem, 0.1rem + 0.2vw, 0.3rem) clamp(0.4rem, 0.3rem + 0.4vw, 0.8rem);
+  text-align: start;
+  
+  /* Beautiful Visual Design */
+  color: #1a365d;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(247, 250, 252, 0.9) 50%,
+    rgba(237, 242, 247, 0.85) 100%);
+  
+  /* Minimal Rounded Corners */
+  border-radius: clamp(3px, 0.2rem + 0.2vw, 6px);
+  
+  /* Subtle Box Shadows */
+  box-shadow: 
+    0 clamp(1px, 0.0625rem + 0.1vw, 2px) clamp(4px, 0.25rem + 0.4vw, 8px) rgba(0, 0, 0, 0.06),
+    0 1px clamp(2px, 0.125rem + 0.2vw, 4px) rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  
+  /* Gradient Border */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform, box-shadow;
+  
+  /* Minimal Backdrop Effects */
+  backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+  -webkit-backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+}
+
+/* Decorative Gradient Border */
+.thirdtext2 h3::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%);
+  border-radius: inherit;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Shimmer Effect */
+.thirdtext2 h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%);
+  border-radius: inherit;
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover Animations */
+.thirdtext2 h3:hover {
+  transform: translateY(-0.5px) scale(1.005);
+  color: #2d3748;
+  
+  /* Minimal Enhanced Shadows on Hover */
+  box-shadow: 
+    0 clamp(2px, 0.125rem + 0.2vw, 4px) clamp(8px, 0.5rem + 0.6vw, 12px) rgba(0, 0, 0, 0.1),
+    0 1px clamp(4px, 0.25rem + 0.3vw, 6px) rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(249, 250, 251, 0.95) 50%,
+    rgba(243, 244, 246, 0.9) 100%);
+}
+
+.thirdtext2 h3:hover::before {
+  opacity: 0.8;
+}
+
+.thirdtext2 h3:hover::after {
+  left: 100%;
+}
+
+/* Active State */
+.thirdtext2 h3:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Beautiful H3 Span Styling */
+.thirdtext2 h3 span {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.75rem, 0.7rem + 1.2vw, 1.4rem);
+  font-weight: 500;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  
+  /* Beautiful Color with Gradient Text */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  /* Compact Layout */
+  display: inline-block;
+  position: relative;
+  text-wrap: balance;
+  word-break: normal;
+  
+  /* Minimal Spacing */
+  margin: 0;
+  padding: 0;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Elegant Underline Effect */
+.thirdtext2 h3 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 1px;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Span Hover Effects */
+.thirdtext2 h3:hover span {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thirdtext2 h3:hover span::after {
+  transform: scaleX(1);
+  opacity: 0.8;
+}
+
+/* Beautiful Paragraph Styling */
+.thirdtext2 p {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 0.8vw, 1.2rem);
+  font-weight: 400;
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: clamp(1.4, 1.3 + 0.2vw, 1.6);
+  letter-spacing: 0.005em;
+  
+  /* Beautiful Color */
+  color: #4a5568;
+  
+  /* Elegant Layout */
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
+  /* Compact Spacing */
+  margin: clamp(0.5rem, 0.4rem + 0.3vw, 0.8rem) 0 0 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+  /* Subtle Visual Enhancement */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  
+  /* Smooth Transitions */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Paragraph Hover Effect */
+.thirdtext2:hover p {
+  color: #2d3748;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thirdtext2 button {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin-top: 20px;
+}
+
+.thirdtext2 button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.thirdtext2 button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext2 button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext2 button:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.thirdtext2 button:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+.thirdtext2 button {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin-top: 20px;
+}
+
+.thirdtext2 button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.thirdtext2 button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext2 button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext2 button:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.thirdtext2 button:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+.thirditem3{
+   border: 9px solid rgba(0,0,0,0.35);
+    padding: 18px;
+    border-radius: 28px;
+    /* width: 400px;                */
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;              
+}
+.thirdimg3 img {
+  max-width: 100%;        /* container se bahar na nikle */
+  height: auto;           /* aspect ratio maintain karega */
+  display: block;
+  margin: 0 auto 15px;    /* center + neeche gap */
+  border-radius: 10px;    /* styling */
+  object-fit: cover;      /* optional: crop karega, stretch nahi */
+}
+
+
+
+
+
+.thirdtext3 h3 {
+  /* Isolated Positioning - Won't affect other elements */
+  position: relative;
+  isolation: isolate;
+  contain: layout style;
+  
+  /* Compact Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 1.5vw, 1.5rem);
+  font-weight: 700;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  
+  /* Compact Layout */
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: clamp(0.15em, 0.1em + 0.2vw, 0.3em);
+  width: fit-content;
+  max-width: 100%;
+  
+  /* Ultra Minimal Spacing - Maximum Height Reduction */
+  margin: 0;
+  padding: clamp(0.15rem, 0.1rem + 0.2vw, 0.3rem) clamp(0.4rem, 0.3rem + 0.4vw, 0.8rem);
+  text-align: start;
+  
+  /* Beautiful Visual Design */
+  color: #1a365d;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(247, 250, 252, 0.9) 50%,
+    rgba(237, 242, 247, 0.85) 100%);
+  
+  /* Minimal Rounded Corners */
+  border-radius: clamp(3px, 0.2rem + 0.2vw, 6px);
+  
+  /* Subtle Box Shadows */
+  box-shadow: 
+    0 clamp(1px, 0.0625rem + 0.1vw, 2px) clamp(4px, 0.25rem + 0.4vw, 8px) rgba(0, 0, 0, 0.06),
+    0 1px clamp(2px, 0.125rem + 0.2vw, 4px) rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  
+  /* Gradient Border */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform, box-shadow;
+  
+  /* Minimal Backdrop Effects */
+  backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+  -webkit-backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+}
+
+/* Decorative Gradient Border */
+.thirdtext3 h3::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%);
+  border-radius: inherit;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Shimmer Effect */
+.thirdtext3 h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%);
+  border-radius: inherit;
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover Animations */
+.thirdtext3 h3:hover {
+  transform: translateY(-0.5px) scale(1.005);
+  color: #2d3748;
+  
+  /* Minimal Enhanced Shadows on Hover */
+  box-shadow: 
+    0 clamp(2px, 0.125rem + 0.2vw, 4px) clamp(8px, 0.5rem + 0.6vw, 12px) rgba(0, 0, 0, 0.1),
+    0 1px clamp(4px, 0.25rem + 0.3vw, 6px) rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(249, 250, 251, 0.95) 50%,
+    rgba(243, 244, 246, 0.9) 100%);
+}
+
+.thirdtext3 h3:hover::before {
+  opacity: 0.8;
+}
+
+.thirdtext3 h3:hover::after {
+  left: 100%;
+}
+
+/* Active State */
+.thirdtext3 h3:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Beautiful H3 Span Styling */
+.thirdtext3 h3 span {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.75rem, 0.7rem + 1.2vw, 1.4rem);
+  font-weight: 500;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  
+  /* Beautiful Color with Gradient Text */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  /* Compact Layout */
+  display: inline-block;
+  position: relative;
+  text-wrap: balance;
+  word-break: normal;
+  
+  /* Minimal Spacing */
+  margin: 0;
+  padding: 0;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Elegant Underline Effect */
+.thirdtext3 h3 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 1px;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Span Hover Effects */
+.thirdtext3 h3:hover span {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thirdtext3 h3:hover span::after {
+  transform: scaleX(1);
+  opacity: 0.8;
+}
+
+/* Beautiful Paragraph Styling */
+.spl {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 0.8vw, 1.2rem);
+  font-weight: 400;
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: clamp(1.4, 1.3 + 0.2vw, 1.6);
+  letter-spacing: 0.005em;
+  
+  /* Beautiful Color */
+  color: #4a5568;
+  
+  /* Elegant Layout */
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
+  /* Compact Spacing */
+  margin: clamp(0.5rem, 0.4rem + 0.3vw, 0.8rem) 0 0 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+  /* Subtle Visual Enhancement */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  
+  /* Smooth Transitions */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Paragraph Hover Effect */
+.thirdtext3:hover p {
+  color: #2d3748;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.thirdtext3 button {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin-top: 20px;
+}
+
+.thirdtext3 button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.thirdtext3 button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext3 button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext3 button:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.thirdtext3 button:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button3:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+
+
+
+.thirditem4{
+   border: 9px solid rgba(0,0,0,0.35);
+    padding: 18px;
+    border-radius: 28px;
+    /* width: 400px;                */
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.35);
+    max-width: 600px;              
+}
+.thirdimg4 img {
+  max-width: 100%;        /* container se bahar na nikle */
+  height: auto;           /* aspect ratio maintain karega */
+  display: block;
+  margin: 0 auto 15px;    
+  border-radius: 10px;    /* styling */
+  object-fit: cover;      /* optional: crop karega, stretch nahi */
+}
+
+
+
+.thirdtext4 h3 {
+  /* Isolated Positioning - Won't affect other elements */
+  position: relative;
+  isolation: isolate;
+  contain: layout style;
+  
+  /* Compact Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 1.5vw, 1.5rem);
+  font-weight: 700;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  
+  /* Compact Layout */
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: clamp(0.15em, 0.1em + 0.2vw, 0.3em);
+  width: fit-content;
+  max-width: 100%;
+  
+  /* Ultra Minimal Spacing - Maximum Height Reduction */
+  margin: 0;
+  padding: clamp(0.15rem, 0.1rem + 0.2vw, 0.3rem) clamp(0.4rem, 0.3rem + 0.4vw, 0.8rem);
+  text-align: start;
+  
+  /* Beautiful Visual Design */
+  color: #1a365d;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(247, 250, 252, 0.9) 50%,
+    rgba(237, 242, 247, 0.85) 100%);
+  
+  /* Minimal Rounded Corners */
+  border-radius: clamp(3px, 0.2rem + 0.2vw, 6px);
+  
+  /* Subtle Box Shadows */
+  box-shadow: 
+    0 clamp(1px, 0.0625rem + 0.1vw, 2px) clamp(4px, 0.25rem + 0.4vw, 8px) rgba(0, 0, 0, 0.06),
+    0 1px clamp(2px, 0.125rem + 0.2vw, 4px) rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  
+  /* Gradient Border */
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform, box-shadow;
+  
+  /* Minimal Backdrop Effects */
+  backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+  -webkit-backdrop-filter: blur(clamp(3px, 0.2rem + 0.1vw, 5px)) saturate(1.05);
+}
+
+/* Decorative Gradient Border */
+.thirdtext4 h3::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(135deg, 
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%);
+  border-radius: inherit;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Shimmer Effect */
+.thirdtext4 h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%);
+  border-radius: inherit;
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover Animations */
+.thirdtext4 h3:hover {
+  transform: translateY(-0.5px) scale(1.005);
+  color: #2d3748;
+  
+  /* Minimal Enhanced Shadows on Hover */
+  box-shadow: 
+    0 clamp(2px, 0.125rem + 0.2vw, 4px) clamp(8px, 0.5rem + 0.6vw, 12px) rgba(0, 0, 0, 0.1),
+    0 1px clamp(4px, 0.25rem + 0.3vw, 6px) rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(249, 250, 251, 0.95) 50%,
+    rgba(243, 244, 246, 0.9) 100%);
+}
+
+.thirdtext4 h3:hover::before {
+  opacity: 0.8;
+}
+
+.thirdtext4 h3:hover::after {
+  left: 100%;
+}
+
+/* Active State */
+.thirdtext4 h3:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Beautiful H3 Span Styling */
+.thirdtext4 h3 span {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.75rem, 0.7rem + 1.2vw, 1.4rem);
+  font-weight: 500;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  
+  /* Beautiful Color with Gradient Text */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  /* Compact Layout */
+  display: inline-block;
+  position: relative;
+  text-wrap: balance;
+  word-break: normal;
+  
+  /* Minimal Spacing */
+  margin: 0;
+  padding: 0;
+  
+  /* Smooth Transitions */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Elegant Underline Effect */
+.thirdtext4 h3 span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 1px;
+  opacity: 0.6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Span Hover Effects */
+.thirdtext4 h3:hover span {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thirdtext4 h3:hover span::after {
+  transform: scaleX(1);
+  opacity: 0.8;
+}
+
+/* Beautiful Paragraph Styling */
+.thirdtext4 p {
+  /* Ultra Responsive Typography */
+  font-size: clamp(0.875rem, 0.8rem + 0.8vw, 1.2rem);
+  font-weight: 400;
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: clamp(1.4, 1.3 + 0.2vw, 1.6);
+  letter-spacing: 0.005em;
+  
+  /* Beautiful Color */
+  color: #4a5568;
+  
+  /* Elegant Layout */
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  
+  /* Compact Spacing */
+  margin: clamp(0.5rem, 0.4rem + 0.3vw, 0.8rem) 0 0 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+  /* Subtle Visual Enhancement */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  
+  /* Smooth Transitions */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Paragraph Hover Effect */
+.thirdtext4:hover p {
+  color: #2d3748;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thirdtext4 button {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+ margin-top: 20px;
+}
+
+.thirdtext4 button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.thirdtext4 button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext4 button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.thirdtext4 button:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.thirdtext4 button:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button4:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
