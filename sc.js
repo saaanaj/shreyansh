@@ -18,11 +18,16 @@
   let filteredData = [];
   let isAnimating = false;
 
-  // Premium UI/UX CSS with Glass Morphism & Optimized Animations
+  // Premium UI/UX CSS with Glass Morphism & Optimized Animations - Scoped to Second Page
   const style = document.createElement('style');
   style.type = 'text/css';
   style.textContent = `
-  :root {
+  /* Second Page Health Test Carousel - Scoped Styles */
+  #secondpage {
+  height: 120vh;
+    contain: layout style paint;
+    will-change: transform;
+    transform: translateZ(0);
     --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --bg-secondary: rgba(255, 255, 255, 0.1);
     --card-bg: rgba(255, 255, 255, 0.15);
@@ -41,21 +46,28 @@
     --border-radius-sm: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
+  
+  #secondpage-health-tests {
+    contain: layout style paint;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    background: var(--bg-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 
-  * {
+  #secondpage * {
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', 'Poppins', sans-serif;
-    background: var(--bg-primary);
-    min-height: 110vh;
-    overflow-x: hidden;
-  }
-
-  #loading-overlay {
+  #secondpage #loading-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -85,7 +97,7 @@
     100% { transform: rotate(360deg); }
   }
 
-  #loading-overlay p {
+  #secondpage #loading-overlay p {
     color: var(--text-light);
     font-size: 1.1rem;
     font-weight: 500;
@@ -93,19 +105,19 @@
     opacity: 0.9;
   }
 
-  .main-container {
+  #secondpage .main-container {
     padding: 40px 20px;
     max-width: 1400px;
     margin: 0 auto;
   }
 
-  .header {
+  #secondpage .header {
     text-align: center;
     margin-bottom: 40px;
     color: var(--text-light);
   }
 
-  .header h1 {
+  #secondpage .header h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -115,25 +127,25 @@
     background-clip: text;
   }
 
-  .header p {
+  #secondpage .header p {
     font-size: 1.2rem;
     opacity: 0.9;
     font-weight: 400;
   }
 
-  .search-container {
+  #secondpage .search-container {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
   }
 
-  .search-wrapper {
+  #secondpage .search-wrapper {
     position: relative;
     width: 100%;
     max-width: 500px;
   }
 
-  .search-input {
+  #secondpage .search-input {
     width: 100%;
     padding: 16px 50px 16px 20px;
     font-size: 1rem;
@@ -148,17 +160,17 @@
     box-shadow: var(--shadow-sm);
   }
 
-  .search-input::placeholder {
+  #secondpage .search-input::placeholder {
     color: rgba(255, 255, 255, 0.7);
   }
 
-  .search-input:focus {
+  #secondpage .search-input:focus {
     background: var(--card-hover);
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
   }
 
-  .search-icon {
+  #secondpage .search-icon {
     position: absolute;
     right: 16px;
     top: 50%;
@@ -167,7 +179,7 @@
     font-size: 1.2rem;
   }
 
-  .search-suggestions {
+  #secondpage .search-suggestions {
     position: absolute;
     top: 100%;
     left: 0;
@@ -183,7 +195,7 @@
     display: none;
   }
 
-  .suggestion-item {
+  #secondpage .suggestion-item {
     padding: 12px 20px;
     color: var(--text-light);
     cursor: pointer;
@@ -191,21 +203,21 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .suggestion-item:hover {
+  #secondpage .suggestion-item:hover {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .suggestion-item:last-child {
+  #secondpage .suggestion-item:last-child {
     border-bottom: none;
   }
 
-  #carousel-container {
+  #secondpage #carousel-container {
     position: relative;
     overflow: hidden;
     margin-bottom: 40px;
   }
 
-  #carousel-wrapper {
+  #secondpage #carousel-wrapper {
     overflow: hidden;
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
@@ -213,20 +225,20 @@
     padding: 20px;
   }
 
-  #carousel-items {
+  #secondpage #carousel-items {
     display: flex;
     gap: 24px;
     transition: none;
     will-change: transform;
   }
 
-  .carousel-item {
+  #secondpage .carousel-item {
     flex: 0 0 400px;
     max-width: 400px;
     min-height: 520px;
   }
 
-  .test-card {
+  #secondpage .test-card {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
     border-radius: var(--border-radius);
@@ -241,7 +253,7 @@
     overflow: hidden;
   }
 
-  .test-card::before {
+  #secondpage .test-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -253,17 +265,17 @@
     transition: var(--transition);
   }
 
-  .test-card:hover {
+  #secondpage .test-card:hover {
     transform: translateY(-8px);
     background: var(--card-hover);
     box-shadow: var(--shadow-lg);
   }
 
-  .test-card:hover::before {
+  #secondpage .test-card:hover::before {
     opacity: 1;
   }
 
-  .test-image {
+  #secondpage .test-image {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -272,11 +284,11 @@
     transition: var(--transition);
   }
 
-  .test-card:hover .test-image {
+  #secondpage .test-card:hover .test-image {
     transform: scale(1.05);
   }
 
-  .test-title {
+  #secondpage .test-title {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--text-light);
@@ -284,7 +296,7 @@
     line-height: 1.3;
   }
 
-  .test-category {
+  #secondpage .test-category {
     display: inline-block;
     background: var(--primary);
     color: var(--text-light);
@@ -295,7 +307,7 @@
     margin-bottom: 16px;
   }
 
-  .test-description {
+  #secondpage .test-description {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.95rem;
     line-height: 1.6;
@@ -307,7 +319,7 @@
     overflow: hidden;
   }
 
-  .test-price {
+  #secondpage .test-price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,19 +328,19 @@
     flex-wrap: wrap;
   }
 
-  .price-current {
+  #secondpage .price-current {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-light);
   }
 
-  .price-original {
+  #secondpage .price-original {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: line-through;
   }
 
-  .price-discount {
+  #secondpage .price-discount {
     background: var(--secondary);
     color: var(--text-light);
     padding: 4px 10px;
@@ -337,13 +349,13 @@
     font-weight: 600;
   }
 
-  .test-actions {
+  #secondpage .test-actions {
     display: flex;
     gap: 12px;
     margin-top: auto;
   }
 
-  .btn {
+  #secondpage .btn {
     padding: 12px 20px;
     border: none;
     border-radius: var(--border-radius-sm);
@@ -357,31 +369,31 @@
     font-size: 0.9rem;
   }
 
-  .btn-primary {
+  #secondpage .btn-primary {
     background: var(--primary);
     color: var(--text-light);
     flex: 1;
   }
 
-  .btn-primary:hover {
+  #secondpage .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
   }
 
-  .btn-secondary {
+  #secondpage .btn-secondary {
     background: rgba(255, 255, 255, 0.1);
     color: var(--text-light);
     border: 1px solid rgba(255, 255, 255, 0.3);
     flex: 1;
   }
 
-  .btn-secondary:hover {
+  #secondpage .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
   }
 
-  .carousel-nav {
+  #secondpage .carousel-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -401,27 +413,27 @@
     font-size: 1.2rem;
   }
 
-  .carousel-nav:hover {
+  #secondpage .carousel-nav:hover {
     background: var(--card-hover);
     transform: translateY(-50%) scale(1.1);
   }
 
-  .carousel-nav:disabled {
+  #secondpage .carousel-nav:disabled {
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  #prev-btn { left: -25px; }
-  #next-btn { right: -25px; }
+  #secondpage #prev-btn { left: -25px; }
+  #secondpage #next-btn { right: -25px; }
 
-  .carousel-dots {
+  #secondpage .carousel-dots {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-top: 24px;
   }
 
-  .dot {
+  #secondpage .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -430,13 +442,13 @@
     transition: var(--transition);
   }
 
-  .dot.active {
+  #secondpage .dot.active {
     background: var(--text-light);
     transform: scale(1.2);
   }
 
-  /* Modal Styles */
-  .modal {
+  /* Modal Styles - Scoped to Second Page */
+  #secondpage .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -453,12 +465,12 @@
     transition: var(--transition);
   }
 
-  .modal.active {
+  #secondpage .modal.active {
     opacity: 1;
     visibility: visible;
   }
 
-  .modal-content {
+  #secondpage .modal-content {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
     border-radius: var(--border-radius);
@@ -473,11 +485,11 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .modal.active .modal-content {
+  #secondpage .modal.active .modal-content {
     transform: translateY(0);
   }
 
-  .modal-close {
+  #secondpage .modal-close {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -491,11 +503,11 @@
     transition: var(--transition);
   }
 
-  .modal-close:hover {
+  #secondpage .modal-close:hover {
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .modal-title {
+  #secondpage .modal-title {
     color: var(--text-light);
     font-size: 1.8rem;
     font-weight: 600;
@@ -503,12 +515,12 @@
     padding-right: 40px;
   }
 
-  .test-parameters {
+  #secondpage .test-parameters {
     display: grid;
     gap: 16px;
   }
 
-  .test-full-description {
+  #secondpage .test-full-description {
     color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     line-height: 1.6;
@@ -519,26 +531,26 @@
     margin-bottom: 8px;
   }
 
-  .parameter-group {
+  #secondpage .parameter-group {
     background: rgba(255, 255, 255, 0.1);
     border-radius: var(--border-radius-sm);
     padding: 16px;
   }
 
-  .parameter-title {
+  #secondpage .parameter-title {
     color: var(--text-light);
     font-weight: 600;
     margin-bottom: 12px;
     font-size: 1.1rem;
   }
 
-  .parameter-list {
+  #secondpage .parameter-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 8px;
   }
 
-  .parameter-item {
+  #secondpage .parameter-item {
     color: rgba(255, 255, 255, 0.9);
     padding: 8px 12px;
     background: rgba(255, 255, 255, 0.1);
@@ -547,73 +559,87 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .no-results {
+  #secondpage .no-results {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
     padding: 60px 20px;
   }
 
-  /* Responsive Design */
+  /* Responsive Design - Scoped to Second Page */
   @media (max-width: 1200px) {
-    .carousel-item { flex: 0 0 350px; max-width: 350px; }
+    #secondpage .carousel-item { flex: 0 0 350px; max-width: 350px; }
   }
 
   @media (max-width: 768px) {
-    .header h1 { font-size: 2.5rem; }
-    .header p { font-size: 1.1rem; }
-    .main-container { padding: 20px 16px; }
-    .carousel-item { flex: 0 0 320px; max-width: 320px; min-height: 480px; }
-    .test-card { padding: 20px; }
-    .test-title { font-size: 1.2rem; }
-    .price-current { font-size: 1.4rem; }
-    .carousel-nav { width: 45px; height: 45px; font-size: 1rem; }
-    #prev-btn { left: -22px; }
-    #next-btn { right: -22px; }
-    .modal-content { padding: 24px; margin: 16px; }
-    .modal-title { font-size: 1.5rem; }
-    .parameter-list { grid-template-columns: 1fr; }
+    #secondpage .header h1 { font-size: 2.5rem; }
+    #secondpage .header p { font-size: 1.1rem; }
+    #secondpage .main-container { padding: 20px 16px; }
+    #secondpage .carousel-item { flex: 0 0 320px; max-width: 320px; min-height: 480px; }
+    #secondpage .test-card { padding: 20px; }
+    #secondpage .test-title { font-size: 1.2rem; }
+    #secondpage .price-current { font-size: 1.4rem; }
+    #secondpage .carousel-nav { width: 45px; height: 45px; font-size: 1rem; }
+    #secondpage #prev-btn { left: -22px; }
+    #secondpage #next-btn { right: -22px; }
+    #secondpage .modal-content { padding: 24px; margin: 16px; }
+    #secondpage .modal-title { font-size: 1.5rem; }
+    #secondpage .parameter-list { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 480px) {
-    .header h1 { font-size: 2rem; }
-    .carousel-item { flex: 0 0 280px; max-width: 280px; min-height: 450px; }
-    .test-card { padding: 16px; }
-    .test-image { height: 150px; }
-    .search-input { padding: 14px 45px 14px 16px; }
-    .carousel-nav { display: none; }
-    .parameter-item { font-size: 0.85rem; }
+    #secondpage .header h1 { font-size: 2rem; }
+    #secondpage .carousel-item { flex: 0 0 280px; max-width: 280px; min-height: 450px; }
+    #secondpage .test-card { padding: 16px; }
+    #secondpage .test-image { height: 150px; }
+    #secondpage .search-input { padding: 14px 45px 14px 16px; }
+    #secondpage .carousel-nav { display: none; }
+    #secondpage .parameter-item { font-size: 0.85rem; }
   }
 
-  /* Animations */
+  /* Animations - Scoped to Second Page */
   @keyframes slideIn {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .animate-in {
+  #secondpage .animate-in {
     animation: slideIn 0.6s ease-out forwards;
   }
 
-  /* Performance Optimizations */
-  .carousel-item, .test-card {
+  /* Performance Optimizations - Scoped to Second Page */
+  #secondpage .carousel-item, #secondpage .test-card {
     contain: layout style paint;
   }
 
-  #carousel-items {
+  #secondpage #carousel-items {
     transform: translateZ(0);
     backface-visibility: hidden;
   }
   `;
   document.head.appendChild(style);
 
-  // Create HTML Structure
+  // Create HTML Structure only in second page
   function createHTML() {
-    const body = document.body;
+    const secondPage = document.getElementById('secondpage');
+    if (!secondPage) {
+      console.log('Second page container not found');
+      return {};
+    }
     
-    // Main container
+    // Clear existing content and set containment
+    secondPage.innerHTML = '';
+    secondPage.style.contain = 'layout style paint';
+    secondPage.style.willChange = 'transform';
+    secondPage.style.transform = 'translateZ(0)';
+    
+    // Main container with proper isolation
     const mainContainer = document.createElement('div');
     mainContainer.className = 'main-container';
+    mainContainer.id = 'secondpage-health-tests';
+    mainContainer.style.contain = 'layout style paint';
+    mainContainer.style.position = 'relative';
+    mainContainer.style.zIndex = '1';
     
     // Header
     const header = document.createElement('div');
@@ -710,9 +736,9 @@
     mainContainer.appendChild(carouselContainer);
     mainContainer.appendChild(carouselDots);
     
-    // Append to body
-    body.appendChild(mainContainer);
-    body.appendChild(modal);
+    // Append to second page only
+    secondPage.appendChild(mainContainer);
+    secondPage.appendChild(modal);
     
     return {
       carouselItems,
@@ -803,8 +829,15 @@
   };
 
 
-  // Initialize app
+  // Initialize app only for second page
   function initApp() {
+    // Check if we're on the second page
+    const secondPage = document.getElementById('secondpage');
+    if (!secondPage) {
+      console.log('Second page not found, skipping health test carousel initialization');
+      return;
+    }
+    
     const elements = createHTML();
     setupEventListeners(elements);
     hideLoadingScreen();
@@ -1101,22 +1134,27 @@
     }
   }
 
-  // Select search suggestion
+  // Select search suggestion - scoped to second page
   function selectSuggestion(testName) {
-    const searchInput = document.getElementById('search-input');
-    const suggestions = document.getElementById('search-suggestions');
+    const secondPage = document.getElementById('secondpage');
+    if (!secondPage) return;
     
-    searchInput.value = testName;
-    suggestions.style.display = 'none';
+    const searchInput = secondPage.querySelector('#search-input');
+    const suggestions = secondPage.querySelector('#search-suggestions');
     
-    const elements = {
-      carouselItems: document.getElementById('carousel-items'),
-      carouselDots: document.getElementById('carousel-dots'),
-      prevBtn: document.getElementById('prev-btn'),
-      nextBtn: document.getElementById('next-btn')
-    };
-    
-    performSearch(testName, elements);
+    if (searchInput && suggestions) {
+      searchInput.value = testName;
+      suggestions.style.display = 'none';
+      
+      const elements = {
+        carouselItems: secondPage.querySelector('#carousel-items'),
+        carouselDots: secondPage.querySelector('#carousel-dots'),
+        prevBtn: secondPage.querySelector('#prev-btn'),
+        nextBtn: secondPage.querySelector('#next-btn')
+      };
+      
+      performSearch(testName, elements);
+    }
   }
 
   // Render carousel with filtered data
@@ -1363,11 +1401,23 @@
   window.bookTest = bookTest;
   window.selectSuggestion = selectSuggestion;
 
-  // Initialize the app when DOM is loaded
+  // Initialize the app when DOM is loaded - only for second page
+  function initializeSecondPage() {
+    // Wait a bit to ensure HTML is fully rendered
+    setTimeout(() => {
+      const secondPage = document.getElementById('secondpage');
+      if (secondPage) {
+        initApp();
+      } else {
+        console.log('Second page not found, health test carousel not initialized');
+      }
+    }, 100);
+  }
+  
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
+    document.addEventListener('DOMContentLoaded', initializeSecondPage);
   } else {
-    initApp();
+    initializeSecondPage();
   }
 
   // Wait for GSAP to load
@@ -1375,20 +1425,21 @@
     console.log('✅ GSAP loaded successfully');
   };
 
-  // Auto-refresh data every 5 minutes (reduced from 10 seconds for better performance)
+  // Auto-refresh data every 5 minutes (reduced from 10 seconds for better performance) - only for second page
   setInterval(() => {
-    if (document.getElementById('carousel-items')) {
+    const secondPage = document.getElementById('secondpage');
+    if (secondPage && secondPage.querySelector('#carousel-items')) {
       const elements = {
-        carouselItems: document.getElementById('carousel-items'),
-        searchInput: document.getElementById('search-input'),
-        searchSuggestions: document.getElementById('search-suggestions'),
-        modal: document.getElementById('test-modal'),
-        modalTitle: document.getElementById('modal-title'),
-        testParameters: document.getElementById('test-parameters'),
-        modalClose: document.querySelector('.modal-close'),
-        prevBtn: document.getElementById('prev-btn'),
-        nextBtn: document.getElementById('next-btn'),
-        carouselDots: document.getElementById('carousel-dots')
+        carouselItems: secondPage.querySelector('#carousel-items'),
+        searchInput: secondPage.querySelector('#search-input'),
+        searchSuggestions: secondPage.querySelector('#search-suggestions'),
+        modal: secondPage.querySelector('#test-modal'),
+        modalTitle: secondPage.querySelector('#modal-title'),
+        testParameters: secondPage.querySelector('#test-parameters'),
+        modalClose: secondPage.querySelector('.modal-close'),
+        prevBtn: secondPage.querySelector('#prev-btn'),
+        nextBtn: secondPage.querySelector('#next-btn'),
+        carouselDots: secondPage.querySelector('#carousel-dots')
       };
       
       fetchCarouselData(elements);
