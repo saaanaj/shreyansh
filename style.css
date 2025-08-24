@@ -2546,7 +2546,7 @@ margin-top: 100px;
   color: var(--text-color);
   margin-top: -55px;
   position: relative;
-  /* margin-bottom: 200px; */
+  margin-bottom: 76px;
 }
 .thirdnav{
     text-align: center;
@@ -4222,6 +4222,197 @@ margin-top: 100px;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); /* subtle shadow */
   transition: all 0.3s ease; /* smooth hover effect */
+}
+
+
+
+
+
+
+
+
+
+#fifthpage {
+  width: 100%;
+  height: 140vh;
+  margin-top: 30px;
+  background-color: #fff;
+}
+.fifthnav{
+  width: 100%;
+  height: 5vh;
+  padding: 5px 0;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.fifthnav h2 {
+  /* text-align: center; */
+  font-size: 2.5rem;/* fluid scaling */
+  font-weight: 500;
+  line-height: 1.3;
+  /* word-break: break-word;      */
+  text-wrap: balance;         /* balances multi-line text */
+  margin: 1em 0;            
+}
+.fifthcontent {
+  /* background-color: pink; */
+width: 100%;
+height: 17vh;
+/* overflow-y: auto; */
+display: flex;
+flex-direction: column;  /* 👈 yeh add karna hoga */
+align-items: center;
+/* justify-content: space-between; */
+gap: 30px;
+padding: 0 92px;
+margin-top: 7vh;
+/* margin-bottom: 100vh; */
+}
+.fifthcontent .fitcont1 {
+  padding: 10px 20px;
+  height: 91%;
+  width: 154%;
+}
+.fitcont1 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 90%;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont1 h5 {
+  font-size: 2rem;          
+  font-weight: 400;        
+  line-height: 1.5;        
+  color: #7C7E85;        
+
+  margin-right: 100px;
+  padding-left: 0px;    
+  
+}
+.fitcont1 p {
+  font-size: 1.3rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+
+
+
+
+.fifthcontent .fitcont2 {
+  padding: 13px 34px;
+  height: 90%;
+  width: 160%;
+  margin-top: 70px;
+}
+.fitcont2 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 90%;
+  margin-top: 46px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont2 h5 {
+  font-size: 2rem;          
+  font-weight: 400;        
+  line-height: 1.5;        
+  color: #7C7E85;        
+
+  margin-right: 100px;
+  padding-left: 0px;    
+  
+}
+.fitcont2 p {
+  font-size: 1.3rem;    
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+.fifthcontent .fitcont3 {
+ padding: 13px 34px;
+ height: 90%;
+  width: 160%;
+  margin-top: 80px;
+}
+.fitcont3 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  margin-top: 100px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont3 h5 {
+  font-size: 2rem;          
+  font-weight: 400;        
+  line-height: 1.5;        
+  color: #7C7E85;        
+
+  margin-right: 100px;
+  padding-left: 0px;    
+  
+}
+.fitcont3 p {
+ font-size: 1.3rem;  
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
+}
+.fifthcontent .fitcont4 {
+ padding: 13px 34px;
+ height: 90%;
+ width: 160%;
+ margin-top: 70px;
+}
+.fitcont4 img {
+  padding: 10px 20px;
+  max-width: 100%;
+  max-height: 25vh;
+  height: 100%;
+  margin-top: 135px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0px 6px 18px rgba(0,0,0,0.35); */
+}
+.fitcont4 h5 {
+  font-size: 2rem;          
+  font-weight: 400;        
+  line-height: 1.5;        
+  color: #7C7E85;        
+
+  margin-right: 100px;
+  padding-left: 0px;    
+  
+}
+.fitcont4 p {
+  font-size: 1.3rem;      
+  font-weight: 400;        
+  line-height: 1.5;         
+  color: #7C7E85;         
+  margin-top: 0.5rem;       
+  margin-bottom: 1rem;     
+  white-space: normal;         /* normal wrapping */
+  overflow-wrap: normal;       /* words intact rahenge */
+  word-break: break-all;       /* breaks long words */
 }
 
 
