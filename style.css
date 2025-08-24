@@ -2540,11 +2540,11 @@ margin-top: 100px;
 
 
 #thirdpage {
-  height: 110vh;
+  height: 70vh;
   width: 100%;
   background-color: var(--scdbg-color);
   color: var(--text-color);
-  margin-top: 200px;
+  margin-top: -55px;
   position: relative;
   /* margin-bottom: 200px; */
 }
@@ -2640,7 +2640,7 @@ margin-top: 100px;
     align-items: center;
     justify-content: center;   /* center rakha hai */
     gap: 23px;                 /* thoda aur space clean dikhega */
-    padding: 100px 114px;        
+    padding: 9px 114px;        
     color: var(--text-color);
     flex-wrap: nowrap;         /* slide ke liye nowrap zaroori hai */
     overflow: hidden;          /* slide smooth ke liye */
