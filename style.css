@@ -2377,8 +2377,8 @@ margin-top: 100px;
     .navitems ul {
       display: none;             
       position: absolute;          
-      top: -5px;                  
-      right: 20px;
+      top: -2px;                  
+      right: -4px;
       flex-direction: column;
     }
 
@@ -2414,7 +2414,7 @@ margin-top: 100px;
     /* display: inline; */
     /* display: inline-block; */
     flex-direction: column;
-    height: 57vh;
+    height: 115vh;
     width: 100%;
     color: #fff;
 }
