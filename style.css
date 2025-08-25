@@ -2182,24 +2182,20 @@ margin-top: 100px;
   margin: 0;
   font-family: 'Quicksand', sans-serif; 
   font-weight: 700;                    
-  color: #fff;                          /* readable dark color */
-  text-transform: capitalize;           /* har word ka first letter capital */
-  letter-spacing: 1px;                  /* thoda gap letters ke beech */
-  line-height: 1.2;                     /* better readability */
+  color: #fff;                          
+  text-transform: capitalize;          
+  letter-spacing: 1px;                  
+  line-height: 1.2;                    
 
-  /* Responsive font size */
+  
   font-size: clamp(1.5rem, 4vw, 3rem);
-  /* min = 1.5rem (~24px), max = 3rem (~48px), middle = 4% of viewport width */
-
-  /* Extra styling */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1); /* halka sa depth effect */
-  transition: all 0.3s ease;             /* hover ke liye smoothness */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  transition: all 0.3s ease;            
 }
 .btnbox {
   display: flex;
-  justify-content: center;   /* center me rakhega */
+  justify-content: center;  
   align-items: center;
-  /* margin-top: 40px; */
 }
 
 .service-btn {
@@ -2218,8 +2214,8 @@ margin-top: 100px;
   text-align: left;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
-  overflow: hidden;        /* stripe ko andar limit karega */
-  z-index: 1;              /* text hamesha upar */
+  overflow: hidden;       
+  z-index: 1;            
 }
 
 .service-btn::after {
@@ -2227,21 +2223,20 @@ margin-top: 100px;
   position: absolute;
   top: 0;
   right: 0;
-  width: 8px;                /* strip width */
+  width: 8px;                
   height: 100%;
   background: #ff4f81;
   border-radius: 0 4px 4px 0;
   transition: all 0.4s ease;
-  z-index: -1;               /* background layer ban gaya */
+  z-index: -1;              
 }
-
 /* hover effect */
 .service-btn:hover {
-  color: rgba(255,255,255,0.9); /* thoda faded white */
+  color: rgba(255,255,255,0.9); 
 }
 
 .service-btn:hover::after {
-  width: 100%;               /* full background fill */
+  width: 100%;              
   border-radius: 4px;
 }
 
@@ -2251,39 +2246,34 @@ margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-direction: column; */
   padding: 0 120px;
 }
 .sixfticons {
   height: auto;
 }
 .sixfticons img {
-  /* padding-top: 20px; */
-  /* margin-top: 50px; */
   height: 50px;
   width: 50px;
-  margin: 0 15px; /* thoda balance margin */
-  object-fit: contain; /* image distort na ho */
-  filter: grayscale(30%) brightness(1.1); /* subtle effect */
-  transition: transform 0.3s ease, filter 0.3s ease; /* smooth hover */
-  cursor: pointer; /* clickable feel */
+  margin: 0 15px; 
+  object-fit: contain;
+  filter: grayscale(30%) brightness(1.1); 
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer; 
 }
 .sixfticons footer {
   font-size: 0.9rem;
   color: #fff;
-  /* margin-top: 190px; */
   padding-top: 120px;
 }
 .sixfticons footer p {
-  font-size: 0.9rem;       /* thoda chhota text */
-  color: #aaa;             /* halka grey text */
-  margin: 0;               /* default margin remove */
-  padding: 10px 0;         /* upar-niche thoda space */
-  text-align: center;      /* center align */
+  font-size: 0.9rem;       
+  color: #aaa;           
+  padding: 10px 0;        
+  text-align: center;      
 }
 .sixfticons img:hover {
-  transform: scale(1.1); /* thoda bada hoga */
-  filter: grayscale(0%) brightness(1.2); /* color wapas aayega */
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.2); 
 }
 .sixftlink {
   height: auto;
@@ -2296,27 +2286,7 @@ margin-top: 100px;
   padding: 10px 0;
   text-align: right;
 }
-/* .sixftlink ul li {
-  list-style: none; 
-  margin: 8px 0;
-  gap: 100px;
-}
 
-.sixftlink ul li a {
-  font-size: 1.1rem;
-  color: #aaa;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  gap: 100px;
-}
-
-.sixftlink ul li a:hover {
-  color: #fff; 
-}
-.sixftlink ul li a:active {
-  color: #ff4f81;
-} */
  .sixftlink ul {
   padding: 0;
   margin: 0;
@@ -4420,6 +4390,246 @@ width: 154%;
   overflow-wrap: normal;       /* words intact rahenge */
   word-break: break-all;       /* breaks long words */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sixfooterpage {
+width: 100%;
+height: 80vh;
+color: #000;
+background-color: var(--nav-color);
+margin-top: 0px;
+}
+.sixnav{
+  width: 100%;
+  height: 9vh;
+  background-color: var(--nav-color);
+  display: block;
+  padding: 0 200px;
+}
+.sixnav h1 {
+
+  text-wrap: nowrap;
+  padding: 20px 0;
+  margin-left: -120px; 
+                         
+            
+}
+.btnbox {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+
+
+.service-btn {
+  display: inline-block;
+  background: #fff;
+  color: #7C7E85;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  padding: 16px 40px;
+  border: none;
+  position: relative;
+  min-width: 280px;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;       
+  z-index: 1;            
+}
+
+.service-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;                
+  height: 100%;
+  background: #ff4f81;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.4s ease;
+  z-index: -1;              
+}
+/* hover effect */
+.service-btn:hover {
+  color: rgba(255,255,255,0.9); 
+}
+
+.service-btn:hover::after {
+  width: 100%;              
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sixfotcnt {
+width: 100%;
+height: auto;
+display: grid;
+grid-template-areas:
+"logo logo"
+"links1 links2"
+"connect connect"
+"copyright copyright";
+grid-template-columns: 1fr 1fr;
+gap: 31px 8px;
+padding: 77px 124px 14px 9px;
+align-items: start;
+}
+
+/* Logo placement */
+.sixfticons {
+  grid-area: logo;
+  justify-self: start;
+}
+
+/* Quick Links - first sixftlink */
+.sixftlink:nth-child(2) {
+  grid-area: links1;
+}
+
+/* Our Partners - second sixftlink */
+.sixftlink:nth-child(3) {
+  grid-area: links2;
+}
+
+/* Connect with us - third sixftlink */
+.sixftlink:nth-child(4) {
+  grid-area: connect;
+  justify-self: start;
+}
+
+/* Create copyright section using pseudo-element */
+.sixfotcnt::after {
+  content: "© 2025 Sheriyansh, Inc.\A All rights reserved.";
+  grid-area: copyright;
+  justify-self: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.4;
+  white-space: pre-line;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.sixfticons img {
+  height: 50px;
+  width: 50px;
+  margin: 0 15px;
+  object-fit: contain;
+  filter: grayscale(30%) brightness(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.sixfticons footer {
+  display: none; /* Hide original footer, we'll move it */
+}
+
+.sixfticons footer p {
+  display: none; /* Hide original footer text */
+}
+
+.sixfticons img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.2);
+}
+
+.sixftlink {
+  height: auto;
+  flex: 1;
+  min-width: 200px;
+}
+.sixftlink h6 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+.sixftlink ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sixftlink ul li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.sixftlink ul li a {
+  font-size: 1rem;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.sixftlink ul li a:hover {
+  color: #fff;
+}
+
+.sixftlink ul li a:active {
+  color: #ff4f81;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
