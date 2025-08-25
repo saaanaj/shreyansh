@@ -877,10 +877,10 @@
           <span class="price-discount">${test.discount}% OFF</span>
         </div>
         <div class="test-actions">
-          <button class="btn btn-primary" onclick="bookTest('${test.title}')">
+          <button id="wow2" class="btn btn-primary" onclick="bookTest('${test.title}')">
             📅 Book Now
           </button>
-          <button class="btn btn-secondary" onclick="showTestDetails('${test.title}')">
+          <button  id="wow3" class="btn btn-secondary" onclick="showTestDetails('${test.title}')">
             📝 Details
           </button>
         </div>
@@ -1401,6 +1401,128 @@
   window.bookTest = bookTest;
   window.selectSuggestion = selectSuggestion;
 
+  // Check Test Price Button Functionality - Smooth Scroll to Second Page
+  function setupCheckTestPriceButton() {
+    const checkTestPriceBtn = document.getElementById('carousel-dots');
+    const secondPage = document.getElementById('secondpage');
+    
+    if (checkTestPriceBtn && secondPage) {
+      checkTestPriceBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Smooth scroll to second page
+        secondPage.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        
+        // Add visual feedback with animation
+        if (typeof gsap !== 'undefined') {
+          // Animate button click feedback
+          gsap.to(checkTestPriceBtn, {
+            scale: 0.95,
+            duration: 0.1,
+            ease: 'power2.out',
+            yoyo: true,
+            repeat: 1
+          });
+          
+          // Animate second page entrance after scroll
+          setTimeout(() => {
+            const healthTestsContainer = document.getElementById('secondpage-health-tests');
+            if (healthTestsContainer) {
+              gsap.fromTo(healthTestsContainer, 
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }
+              );
+              
+              // Animate test cards with stagger effect
+              const testCards = document.querySelectorAll('#secondpage .test-card');
+              gsap.fromTo(testCards, 
+                { opacity: 0, y: 50, scale: 0.9 },
+                { 
+                  opacity: 1, 
+                  y: 0, 
+                  scale: 1, 
+                  duration: 0.6, 
+                  stagger: 0.1, 
+                  ease: 'back.out(1.7)',
+                  delay: 0.3
+                }
+              );
+              
+              // Highlight price sections with pulse effect
+              const priceElements = document.querySelectorAll('#secondpage .test-price');
+              gsap.fromTo(priceElements, 
+                { scale: 1 },
+                { 
+                  scale: 1.1, 
+                  duration: 0.4, 
+                  ease: 'power2.out',
+                  yoyo: true,
+                  repeat: 1,
+                  delay: 0.8
+                }
+              );
+            }
+          }, 800); // Wait for scroll to complete
+        }
+        
+        // Show toast notification
+        showPriceCheckToast();
+      });
+    }
+  }
+  
+  // Show toast notification for price check
+  function showPriceCheckToast() {
+    // Create toast element
+    const toast = document.createElement('div');
+    toast.style.cssText = `
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      z-index: 10000;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 0.3s ease;
+    `;
+    toast.innerHTML = `
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 18px;">💰</span>
+        <span>Showing all test prices below!</span>
+      </div>
+    `;
+    
+    document.body.appendChild(toast);
+    
+    // Animate toast in
+    setTimeout(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateX(0)';
+    }, 100);
+    
+    // Remove toast after 3 seconds
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateX(100%)';
+      setTimeout(() => {
+        if (toast.parentNode) {
+          toast.parentNode.removeChild(toast);
+        }
+      }, 300);
+    }, 3000);
+  }
+
   // Initialize the app when DOM is loaded - only for second page
   function initializeSecondPage() {
     // Wait a bit to ensure HTML is fully rendered
@@ -1411,6 +1533,9 @@
       } else {
         console.log('Second page not found, health test carousel not initialized');
       }
+      
+      // Setup check test price button functionality
+      setupCheckTestPriceButton();
     }, 100);
   }
   

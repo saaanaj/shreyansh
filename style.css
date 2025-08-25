@@ -22,6 +22,7 @@ html , body {
     /* overflow: hidden; */
     overflow-x: hidden;
     /* overflow-y: hidden; */
+   scroll-behavior: smooth;
 }
 .navbar  nav{
     display: flex;
