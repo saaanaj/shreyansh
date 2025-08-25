@@ -1989,8 +1989,9 @@ html , body {
 
 #fifthpage {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   margin-top: 30px;
+  background-color: #fff;
 }
 .fifthnav{
   width: 100%;
