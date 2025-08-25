@@ -4442,7 +4442,7 @@ margin-top: 0px;
 
 
 
-.service-btn {
+.btnbox .service-btn {
   display: inline-block;
   background: #fff;
   color: #7C7E85;
@@ -4462,7 +4462,7 @@ margin-top: 0px;
   z-index: 1;            
 }
 
-.service-btn::after {
+.btnbox .service-btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -4475,11 +4475,11 @@ margin-top: 0px;
   z-index: -1;              
 }
 /* hover effect */
-.service-btn:hover {
+.btnbox .service-btn:hover {
   color: rgba(255,255,255,0.9); 
 }
 
-.service-btn:hover::after {
+.btnbox .service-btn:hover::after {
   width: 100%;              
   border-radius: 4px;
 }
