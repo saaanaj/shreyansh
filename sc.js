@@ -1449,3 +1449,15 @@
   console.log('🚀 Premium Health Test Carousel Initialized');
   console.log('✨ Features: Search, Modal Details, Responsive Design, Smooth Animations');
   console.log('📱 Mobile Optimized with Touch Support');
+
+
+// nav secton fix
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".navmenu");
+  const navList = document.querySelector(".navitems ul");
+
+  menuIcon.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+});
